@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8959b83462.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Eyes|Log in</title>
+    <link href="./media/SquareEyes_Logo - Colour-min.png" rel="shortcut icon" type="image/x-icon">
+    <meta name="description" content="Square Eyes Log-in page. Log in to your account or register a new one.">
+    <meta name="Author" content="Rolf Greger Gundersen">
+    <meta name="keywords" content="movies, series, streaming">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<header class="headernavigation flex">
+    <div class="logo">
+        <img src="media/SquareEyes_Logo - Colour-min.png" alt="logo">
+    </div>
+    <nav class="defaultnav">
+        <ul class="loginnavul">
+            <li class="loginnavli"><a class="loginnava" href="index.html">Home</a></li>
+            <li class="loginnavli"><a class="loginnava" id="active" href="login.html">Sign In</a></li>
+            <li class="loginnavli"><a class="loginnava" href="myaccount.html">My Account</a></li>
+        </ul>
+    </nav> 
+</header>
+<main>
+    <div class="flex center">
+    <div class="loginbox order2" id="loginbox"><!--Log In Box-->
+        <form id="loginform" action="NoSatisfaction" method="get">
+            <ul>
+                <li>
+            <label for="email">E-Mail</label>
+            <input id="email" name="email" type="email">
+            </li>
+
+            <li>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+            </li>
+
+            <li>
+            <input id="checkbox" name="RememberMe" type="checkbox">
+            <label for="checkbox">Remember Me</label>
+            </li>
+
+            <li>
+            <button type="submit">Sign In</button>
+            </li>
+            </ul>
+
+        </form>
+    </div>
+
+
+    <div class="infopanel order1"> <!--InfoPanel Left Side-->
+        <img src="media/SquareEyes_Logo - Colour-min.png" class="logopic flex" alt="logo">
+        <p>Get access to thousands of independently made movies or share your own creations!</p>
+        <ul>
+            <li><i class="fas fa-check"></i> Try your first month free</li>
+            <li><i class="fas fa-check"></i> Enjoy SquareEyes on up to five devices simultaniously</li>
+            <li><i class="fas fa-check"></i> Cancel Subscription at any time you like.</li>
+        </ul>
+        <p>Create account now</p>
+        <a href="register.html"><button type="button" id="onemonth">One month free of charge</button></a>
+    </div>
+
+    </div>
+</main>
+<footer>
+    <div class="flex"><!--Footer Centered Logo-->
+        <img class="logopic" alt="logo" src="media/SquareEyes_Logo - Colour-min.png">
+
+    </div>
+    <hr>
+    <div><!--Footer Links-->
+        <ul class="flex center">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div><!--Footer Social Media-->
+        <ul class="flex center">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+        </ul>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>

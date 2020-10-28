@@ -8,150 +8,408 @@
     --Font2:#FFFFFF;
     --Font3:#000000;
     --Font4:#42649B;
+    --Font5:#6A9CEE;
 }
 /*----------CSS Variables, Colors END----------*/
 
-/*----------Flexbox----------*/
-.row{
-    flex-wrap: wrap;
+hr{
+    color: var(--Header)
+}
+
+*{
+   /* background-color: var(--mainBackground); */
+}
+
+
+/*--------Flexbox-----------*/
+.flex{
     display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.center{
     justify-content: center;
-    flex-direction: row;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+}
+.spacebetween{
+    justify-content: space-between;
+}
+.spacearound{
+    justify-content: space-around;
+}
+.order1{
+    order: 1;
+}
+.order2{
+    order: 2;
+}
+.order3{
+    order: 3;
 }
 
-.row::after{
-    display: table;
-    clear: both;
-    content:"";
-}
 
-[class*=col-], .column {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0;
-    flex-shrink: 0;
-    align-items: stretch;
-    margin: 15px;
-    min-height: 1px;
-    }
 
-/*----------MOBILE----------*/
-@media only screen and (min-width: 0) and (max-width: 500px) {
 
-    .col-m-1 {
-            width: 8.3333333333% ;
-        }
-    .col-m-2 {
-            width: 16.6666666667% ;
-        }
-        .col-m-3 {
-            width: 25% ;
-        }
-        .col-m-4 {
-            width: 33.3333333333% ;
-        }
-        .col-m-5 {
-            width: 41.6666666667% ;
-        }
-        .col-m-6 {
-            width: 50% ;
-        }
-        .col-m-7 {
-            width: 58.3333333333% ;
-        }
-        .col-m-8 {
-            width: 66.6666666667% ;
-        }
-        .col-m-9 {
-            width: 75% ;
-        }
-        .col-m-10 {
-            width: 83.3333333333% ;
-        }
-        .col-m-11 {
-            width: 91.6666666667% ;
-        }
-        .col-m-12 {
-            width: 100% ;
-        }
+/*--------DESKTOP-----------*/
+@media only screen and (min-width:900px){
+    .col-d-3{
+        width: 25%;
     }
-    @media only screen and (min-width: 500px) and (max-width: 900px) {
-        /*for tablet*/
-        .col-t-1 {
-            width: 8.3333333333% ;
-        }
-        .col-t-2 {
-            width: 16.6666666667% ;
-        }
-        .col-t-3 {
-            width: 25% ;
-        }
-        .col-t-4 {
-            width: 33.3333333333% ;
-        }
-        .col-t-5 {
-            width: 41.6666666667% ;
-        }
-        .col-t-6 {
-            width: 50% ;
-        }
-        .col-t-7 {
-            width: 58.3333333333% ;
-        }
-        .col-t-8 {
-            width: 66.6666666667% ;
-        }
-        .col-t-9 {
-            width: 75% ;
-        }
-        .col-t-10 {
-            width: 83.3333333333% ;
-        }
-        .col-t-11 {
-            width: 91.6666666667% ;
-        }
-        .col-t-12 {
-            width: 100% ;
-        }
+    .col-d-4{
+        width:33%;
     }
-    @media only screen and (min-width: 900px) {
-        /*for desktop*/
-        .col-d-1 {
-            width: 8.3333333333% ;
-        }
-        .col-d-2 {
-            width: 16.6666666667% ;
-        }
-        .col-d-3 {
-            width: 25% ;
-        }
-        .col-d-4 {
-            width: 33.3333333333% ;
-        }
-        .col-d-5 {
-            width: 41.6666666667% ;
-        }
-        .col-d-6 {
-            width: 50% ;
-        }
-        .col-d-7 {
-            width: 58.3333333333% ;
-        }
-        .col-d-8 {
-            width: 66.6666666667% ;
-        }
-        .col-d-9 {
-            width: 75% ;
-        }
-        .col-d-10 {
-            width: 83.3333333333% ;
-        }
-        .col-d-11 {
-            width: 91.6666666667% ;
-        }
-        .col-d-12 {
-            width: 100%;
-        }
+    .col-d-6{
+        width: 50%;
+    }
+    .col-d-9{
+        width: 75%;
+    }
+    .col-d-12{
+        width: 100%;
     }
     
+}
+/*-----------DESKTOP END---------*/
 
+
+/*------------TABLET------------*/
+@media only screen and (min-width:500px) and (max-width:900px;){
+    .col-t-3{
+        width: 25%;
+    }
+    .col-t-4{
+        width: 33%;
+    }
+    .col-t-6{
+        width: 50%;
+    }
+    .col-t-9{
+        width: 75%;
+    }
+    .col-t-12{
+        width: 100%;
+    }
+}
+/*---------------TABLET END------------*/
+
+/*------------MOBILE------------*/
+@media only screen and (min-width:0px) and (max-width:500px){
+    .col-m-3{
+        width: 25%;
+    }
+    .col-m-4{
+        width: 33%;
+    }
+    .col-m-6{
+        width: 50%;
+    }
+    .col-m-9{
+        width: 75%;
+    }
+    .col-m-12{
+        width: 100%;
+    }
+}
+
+
+
+
+
+/*--------Flexbox END-----------*/
+
+
+
+/*---------Index Page--------*/
+
+.bg-img {
+    /* The image used */
+    background-image: url("../media/StarWarsHeader.jpg");
+  
+    min-height: 50vh;
+    max-width: 100vw;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 50px 50px;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px 20px 20px 800px;
+    width: auto;
+
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+
+  }
+  
+  /* Navbar links */
+  .topnav a {
+  
+    float: left;
+    color: var(--Font2);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    text-decoration-line: underline;
+  }
+  figure img{
+      width: 20vw;
+      border-radius: 50px;
+  }
+  figcaption{
+      color: var(--Font1);
+      margin-left: 10px;
+  }
+  .box1{
+      margin: 20px 0 0 50px;
+  }
+  .box2{
+      margin: 20px 0 0 580px;
+  }
+
+
+  /*---------Index Page END--------*/
+
+  /*---------Default Page Header/Navigation--------*/
+  header{
+    font-family: 'Roboto Slab', sans-serif;
+}
+  .defaultnav{
+      background-color: var(--Header);
+  }
+  .headernavigation{
+      border-radius: 0px 0px 50px 50px;
+      background-color: var(--Header);
+  }
+  .loginnavul{
+      list-style: none;
+      display: inline-block;
+      padding-left: 0;
+      background-color: var(--Header);
+
+  }
+  .loginnavli{
+      float: left;
+      margin-right: 10px;
+
+  }
+  .loginnavli a{
+      text-decoration: none;
+      color: var(--Font3);
+      background-color: var(--Header);
+      padding: 2px 5px;
+      display:inline-block;
+      text-align: center;
+  }
+  .loginnavli:last-child{
+      margin-right:0;
+  }
+  #active{
+      text-decoration: underline;
+      cursor: default;
+  }
+
+  /*---------Default Page Header/Navigation--------*/
+
+
+
+    /*---------Log In Page--------*/
+.loginbox{
+    background-color: var(--TextBox);
+    margin: 50px 0 20px 10px;
+}
+
+#registerform{
+    margin: 0 auto;/*Center on page*/
+    width: 350px;
+    height: 350px;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: var(--TextBox);
+}
+
+#registerform input,label,ul,li, button{
+    background-color: var(--TextBox);
+    list-style-type: none;
+    color: var(--Font4)
+}
+#registerform label{
+    display: block;
+}
+
+.registerbox{
+    background-color: var(--TextBox);
+    margin: 50px 0 20px 10px;
+}
+#radiospace{
+    margin-right: 20px;
+}
+#createaccount{
+    color: var(--Font4);
+    margin-left: 50px;
+}
+#loginform{
+    margin: 0 auto;/*Center on page*/
+    width: 350px;
+    height: 300px;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: var(--TextBox);
+}
+
+#loginform input,label,ul,li, button{
+    background-color: var(--TextBox);
+    list-style-type: none;
+    color: var(--Font4)
+}
+#loginform label{
+    display: block;
+}
+
+input[type=email], input[type=password], input[type=text]{
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #707070;
+}
+
+main{
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+
+
+.infopanel{
+    background-color: var(--TextBox);
+    border: 1px solid black;
+    width: 280px;
+    height: 350px;
+    border-radius: 1em;
+    margin: 50px 0 20px 10px;
+}
+.infopanel p{
+    margin-left: 10px;
+}
+.infopanel li{
+    padding-bottom: 10px;
+}
+.infopanel ul{
+    padding-left: 10px;
+}
+#onemonth{    
+    margin-left: 35px;
+    border-radius: 40px;
+    border: 1px solid #707070;
+    padding: 5px;
+}
+
+#onemonth:hover{
+    background-color: var(--Font4);
+    color: var(--Font2);
+    cursor: pointer;
+    
+}
+.infopanel p{
+    margin-left: 50px;
+}
+.fa-check{
+    color: var(--Header)
+}
+
+
+
+/*---------Log In Page END--------*/
+
+
+
+.logo img{
+      height: 50px;
+      background-color: var(--Header);
+      padding-left:10px;
+  }
+.logopic{
+    height: 50px;
+    margin: auto;
+}
+
+/*---------Footer--------*/
+
+.footerlinks li,a{
+    color: var(--Font3);
+    text-decoration: none;
+    padding: 0 25px 0 25px;
+    font-size: 20px;
+}
+
+.footersocial li{
+    padding: 0 15px 0 15px;
+    font-size: 20px;
+}
+.fa-facebook-f, {
+    color: black;
+
+}
+
+
+
+/*-------------My Account------------*/
+
+#mainbox{
+    width:80vw;
+    height:90vh;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 50px auto 0 auto;
+}
+#mainbox p{
+    margin-left: 10px;;
+}
+#cancel{
+    padding: 15px;
+    margin-left: 10px;
+    font-size: 14;
+}
+.account{
+    font-size: 25px;
+    color: var(--Font4)
+}
+#accountheader{
+    font-family: 'Roboto Slab', sans-serif;
+    margin-left: 10px;
+    color: var(--Font4)
+}
+.passphone{
+    color: var(--Font5)
+}
+
+
+/*---------Movie Page------------*/
+.moviebg{
+    background-image: url(../media/EdgeOfTomorrow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
