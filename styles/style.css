@@ -1,4 +1,5 @@
 /*----------CSS Variables, Colors----------*/
+
 :root{
     --Header: #F6C331;
     --mainBackground: #E7E7E7;
@@ -15,18 +16,15 @@
 hr{
     color: var(--Header)
 }
-
-*{
-   /* background-color: var(--mainBackground); */
-}
-
-
 /*--------Flexbox-----------*/
 .flex{
     display: flex;
 }
 .wrap{
     flex-wrap: wrap;
+}
+.wrapreverse{
+    flex-wrap: wrap-reverse;
 }
 .center{
     justify-content: center;
@@ -37,12 +35,14 @@ hr{
 .flex-start{
     justify-content: flex-start;
 }
-}
 .spacebetween{
     justify-content: space-between;
 }
 .spacearound{
     justify-content: space-around;
+}
+.spaceevenly{
+    justify-content: space-evenly;
 }
 .order1{
     order: 1;
@@ -80,7 +80,7 @@ hr{
 
 
 /*------------TABLET------------*/
-@media only screen and (min-width:500px) and (max-width:900px;){
+@media only screen and (min-width:500px) and (max-width:900px){
     .col-t-3{
         width: 25%;
     }
@@ -123,7 +123,15 @@ hr{
 
 
 /*--------Flexbox END-----------*/
-
+.bgcolor{
+    background-color: var(--mainBackground);
+}
+.bgcolor ul li{
+    background-color: var(--mainBackground);
+}
+.nomargin{
+    margin: 0;
+}
 
 
 /*---------Index Page--------*/
@@ -133,7 +141,8 @@ hr{
     background-image: url("../media/StarWarsHeader.jpg");
   
     min-height: 50vh;
-    max-width: 100vw;
+    max-width: 80vw;
+    margin: auto;
   
     /* Center and scale the image nicely */
     background-position: center;
@@ -148,7 +157,7 @@ hr{
   /* Position the navbar container inside the image */
   .container {
     position: absolute;
-    margin: 20px 20px 20px 800px;
+    margin: 20px 20px 20px 650px;
     width: auto;
 
   }
@@ -181,12 +190,16 @@ hr{
       color: var(--Font1);
       margin-left: 10px;
   }
+  
   .box1{
-      margin: 20px 0 0 50px;
+      margin: 50px 0 0 0px;
+      font-weight: 700;
   }
   .box2{
-      margin: 20px 0 0 580px;
+      margin: 50px 0 0 300px;
+      font-weight: 700;
   }
+  
 
 
   /*---------Index Page END--------*/
@@ -197,6 +210,8 @@ hr{
 }
   .defaultnav{
       background-color: var(--Header);
+      margin-right: 50px;
+
   }
   .headernavigation{
       border-radius: 0px 0px 50px 50px;
@@ -236,7 +251,7 @@ hr{
 
     /*---------Log In Page--------*/
 .loginbox{
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
     margin: 50px 0 20px 10px;
 }
 
@@ -247,20 +262,23 @@ hr{
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
 }
 
 #registerform input,label,ul,li, button{
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
     list-style-type: none;
     color: var(--Font4)
 }
 #registerform label{
     display: block;
 }
+#checkboxlabel{
+    display: inline ;
+}
 
 .registerbox{
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
     margin: 50px 0 20px 10px;
 }
 #radiospace{
@@ -277,11 +295,11 @@ hr{
     padding: 1em;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
 }
 
 #loginform input,label,ul,li, button{
-    background-color: var(--TextBox);
+    background-color: var(--TextBox) ;
     list-style-type: none;
     color: var(--Font4)
 }
@@ -309,7 +327,7 @@ main{
     width: 280px;
     height: 350px;
     border-radius: 1em;
-    margin: 50px 0 20px 10px;
+    margin: 106px 0 20px 10px;
 }
 .infopanel p{
     margin-left: 10px;
@@ -349,7 +367,7 @@ main{
 .logo img{
       height: 50px;
       background-color: var(--Header);
-      padding-left:10px;
+      margin-left:20px;
   }
 .logopic{
     height: 50px;
@@ -369,18 +387,15 @@ main{
     padding: 0 15px 0 15px;
     font-size: 20px;
 }
-.fa-facebook-f, {
+.fa-facebook-f{
     color: black;
 
 }
-
-
-
 /*-------------My Account------------*/
 
 #mainbox{
     width:80vw;
-    height:90vh;
+    height:98vh;
     border: 1px solid black;
     border-radius: 50px;
     margin: 50px auto 0 auto;

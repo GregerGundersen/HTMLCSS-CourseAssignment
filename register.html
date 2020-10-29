@@ -12,12 +12,12 @@
     <meta name="keywords" content="movies, series, streaming">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    <header class="headernavigation flex">
-        <div class="logo col-d-6">
+<body class="nomargin">
+    <header class="headernavigation flex spacebetween">
+        <div class="logo">
             <img src="media/SquareEyes_Logo - Colour-min.png" alt="logo">
         </div>
-        <nav class="defaultnav col-d-6">
+        <nav class="defaultnav">
             <ul class="loginnavul">
                 <li class="loginnavli"><a class="loginnava" href="index.html">Home</a></li>
                 <li class="loginnavli"><a class="loginnava" id="active" href="login.html">Sign In</a></li>
@@ -27,6 +27,10 @@
     </header>
     <main class="flex center">
         <div class="registerbox order2"><!--Register Box-->
+            <ul class="flex">
+                <li><a href="login.html">Log In</a></li>
+                <li><a id="active" href="register.html">Register</a></li>
+            </ul>
             <form id="registerform" action="NoSatisfaction" method="get">
                 <ul>
                     <li>

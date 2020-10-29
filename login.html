@@ -12,8 +12,9 @@
     <meta name="keywords" content="movies, series, streaming">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet"> 
 </head>
-<body>
-<header class="headernavigation flex">
+<body class="nomargin">
+
+<header class="headernavigation flex spacebetween">
     <div class="logo">
         <img src="media/SquareEyes_Logo - Colour-min.png" alt="logo">
     </div>
@@ -26,8 +27,12 @@
     </nav> 
 </header>
 <main>
-    <div class="flex center">
+    <div class="flex center wrapreverse">
     <div class="loginbox order2" id="loginbox"><!--Log In Box-->
+        <ul class="flex">
+            <li><a id="active" href="login.html">Log In</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
         <form id="loginform" action="NoSatisfaction" method="get">
             <ul>
                 <li>
@@ -42,7 +47,7 @@
 
             <li>
             <input id="checkbox" name="RememberMe" type="checkbox">
-            <label for="checkbox">Remember Me</label>
+            <label id="checkboxlabel" for="checkbox">Remember Me</label>
             </li>
 
             <li>
