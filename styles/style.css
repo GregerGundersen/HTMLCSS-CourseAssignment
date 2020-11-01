@@ -224,7 +224,7 @@ hr{
 }
 
 #registerform{
-    margin: 0 auto;/*Center on page*/
+    margin: 0 auto;
     width: 350px;
     height: 350px;
     padding: 1em;
@@ -261,7 +261,7 @@ hr{
     margin: 20px 0 0 70px;
 }
 #loginform{
-    margin: 0 auto;/*Center on page*/
+    margin: 0 auto;
     width: 350px;
     height: 300px;
     padding: 1em;
