@@ -14,27 +14,28 @@
 </head>
 <body class="bgcolor nomargin">
   
-    <header>
-        <div class="bg-img">
-            <div class="container">
-              <div class="topnav">
-                <a href="./index.html" id="active">Home</a>
-                <a href="./login.html">Log In</a>
-                <a href="./myaccount.html">My Account</a>
-              </div>
-            </div>
-          </div> 
-    </header>
+
+      <header class="headernavigation flex spacebetween">
+        <div class="logo">
+            <img src="media/SquareEyes_Logo - Colour-min.png" alt="logo">
+        </div>
+        <nav class="defaultnav">
+            <ul class="loginnavul">
+                <li class="loginnavli"><a class="loginnava" id="active" href="index.html">Home</a></li>
+                <li class="loginnavli"><a class="loginnava" href="login.html">Sign In</a></li>
+                <li class="loginnavli"><a class="loginnava" href="myaccount.html">My Account</a></li>
+            </ul>
+        </nav> 
+      </header>
+      <section class="flex featuredimg center">
+        <img src="media/StarWarsHeaderRszOpt.jpg" alt="star wars" class="headerimage">
+      </section>
   
     <main>
-      <div class="flex">
-        <div class="box1">
-          <p>Trending</p>
-        </div>
-        <div class="box2">
-          <p>Browse</p>
-        </div>
-
+      <br>
+      <div class="flex spacearound bgcolor">
+        <li class="bgcolor fontweight700">Trending</li>
+        <li class="bgcolor fontweight700">Browse</li>
       </div>
      <div class="flex center wrap">
        <div>
@@ -48,14 +49,19 @@
            <img src="media/EdgeOfTomorrow.jpg" alt="Edge Of Tomorrow movie poster">
            <figcaption>Edge of Tomorrow</figcaption>
          </figure>
-       </div><!--Closing Div, Trending Movies-->
+       </div>
        <div>
          <figure>
            <img src="media/Harry Potter And The Deathly Hallows.jpg" alt="Harry Potter movie poster">
            <figcaption>Harry Potter</figcaption>
          </figure>
        </div>
-     </div>
+     </div><!--Closing Div, Trending Movies-->
+     <br>
+     <div class="flex spacearound bgcolor">
+      <li class="bgcolor fontweight700">What's New?</li>
+      <li class="bgcolor fontweight700">Browse</li>
+    </div>
      <div class="flex center wrap">
       <div>
         <figure>
@@ -84,7 +90,7 @@
       </div>
       <hr>
       <div><!--Footer Links-->
-          <ul class="flex center bgcolor">
+          <ul class="flex center bgcolor wrap">
               <li><a href="index.html">Home</a></li>
               <li><a href="aboutus.html">About Us</a></li>
               <li><a href="services.html">Services</a></li>
@@ -92,7 +98,7 @@
           </ul>
       </div>
       <div><!--Footer Social Media-->
-          <ul class="flex center bgcolor">
+          <ul class="flex spacearound bgcolor wrap">
               <li><i class="fab fa-facebook-f "></i></li>
               <li><i class="fab fa-instagram "></i></li>
               <li><i class="fab fa-twitter "></i></li>

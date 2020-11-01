@@ -12,7 +12,7 @@
     <meta name="keywords" content="movies, series, streaming">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet"> 
 </head>
-<body class="nomargin">
+<body class="nomargin bgcolor">
 
 <header class="headernavigation flex spacebetween">
     <div class="logo">
@@ -29,29 +29,29 @@
 <main>
     <div class="flex center wrapreverse">
     <div class="loginbox order2" id="loginbox"><!--Log In Box-->
-        <ul class="flex">
-            <li><a id="active" href="login.html">Log In</a></li>
+        <ul class="flex bgcolor">
+            <li class="bgcolor"><a id="active" href="login.html">Log In</a></li>
             <li><a href="register.html">Register</a></li>
         </ul>
         <form id="loginform" action="NoSatisfaction" method="get">
             <ul>
-                <li>
+                <li class="textboxcolor">
             <label for="email">E-Mail</label>
             <input id="email" name="email" type="email">
             </li>
 
-            <li>
+            <li class="textboxcolor">
             <label for="password">Password</label>
             <input id="password" name="password" type="password">
             </li>
 
-            <li>
+            <li class="textboxcolor">
             <input id="checkbox" name="RememberMe" type="checkbox">
             <label id="checkboxlabel" for="checkbox">Remember Me</label>
             </li>
 
-            <li>
-            <button type="submit">Sign In</button>
+            <li class="textboxcolor" >
+            <a id="signin" href="myaccount.html">Sign in <i class="fas fa-sign-in-alt"></i></a>
             </li>
             </ul>
 
@@ -63,9 +63,9 @@
         <img src="media/SquareEyes_Logo - Colour-min.png" class="logopic flex" alt="logo">
         <p>Get access to thousands of independently made movies or share your own creations!</p>
         <ul>
-            <li><i class="fas fa-check"></i> Try your first month free</li>
-            <li><i class="fas fa-check"></i> Enjoy SquareEyes on up to five devices simultaniously</li>
-            <li><i class="fas fa-check"></i> Cancel Subscription at any time you like.</li>
+            <li class="textboxcolor"><i class="fas fa-check"></i> Try your first month free</li>
+            <li class="textboxcolor"><i class="fas fa-check"></i> Enjoy SquareEyes on up to five devices simultaniously</li>
+            <li class="textboxcolor"><i class="fas fa-check"></i> Cancel Subscription at any time you like.</li>
         </ul>
         <p>Create account now</p>
         <a href="register.html"><button type="button" id="onemonth">One month free of charge</button></a>
@@ -80,7 +80,7 @@
     </div>
     <hr>
     <div><!--Footer Links-->
-        <ul class="flex center">
+        <ul class="flex center wrap bgcolor">
             <li><a href="index.html">Home</a></li>
             <li><a href="aboutus.html">About Us</a></li>
             <li><a href="services.html">Services</a></li>
@@ -88,7 +88,7 @@
         </ul>
     </div>
     <div><!--Footer Social Media-->
-        <ul class="flex center">
+        <ul class="flex spacearound wrap bgcolor">
             <li><i class="fab fa-facebook-f"></i></li>
             <li><i class="fab fa-instagram"></i></li>
             <li><i class="fab fa-twitter"></i></li>
